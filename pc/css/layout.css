@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+.skip-navi{position:absolute;left:0;top:0;z-index:9999;width:100%;text-align:center;}
+.skip-navi a{position:absolute;left:-9999px;top:-9999px;}
+.skip-navi a:focus, .skip-navi a:active, .skip-navi a:hover{display:block;left:0;top:0;padding:7px 10px 5px;background:#000;color:#fff;font-weight:bold;font-size:14px;}
+
+body{width:100%;background: #000;}
+#wrapper{margin:0 auto;background:#fff;}
+#wrapper, #header{min-width:1600px;}
+
+#header{position:absolute;left:0;top:0;margin:0 auto;width:100%;z-index:1;}
+#header, #header #gnb > li ul{background-color:rgba(0, 0, 0, 0.5);}
+#header .inner{width:1600px;height:100px;margin:0 auto;position: relative;}
+#header h1{padding-top:40px;}
+#header .hospital-swiper{position: absolute;left:334px;top:26px;width:150px;}
+#header .hospital-swiper .swiper-slide{opacity:0 !important;}
+#header .hospital-swiper .swiper-slide-active{opacity:1 !important;}
+
+#header #gnb{position:absolute;left:594px;top:31px;}
+#header #gnb > li{float:left;margin-left:49px;position: relative;}
+#header #gnb > li:first-child{margin-left:0;}
+#header #gnb > li > a{font-size:19px;color:#fff;font-weight:500;display:inline-block;padding:9px 18px;border-radius:15px;}
+#header #gnb > li.on > a{background-color:#a07c46;color:#fff;}
+#header #gnb > li ul{padding:25px 30px;position:absolute;left:0;top:69px;border-radius:0 0 15px 15px;white-space:nowrap;display:none;}
+#header #gnb > li ul li{margin-top:30px;}
+#header #gnb > li ul li:first-child{margin-top:0;}
+#header #gnb > li ul li a{font-size:18px;color:#fff;}
+#header #gnb > li ul li a:hover{border-bottom:1px solid #ac9068;}
+#header .mark{position:absolute;right:0;top:0;}
+
+body.main #header, body.main #header #gnb > li ul{background-color:rgba(255, 255, 255, 0.5);}
+body.main #header #gnb > li > a{color:#000;}
+body.main #header #gnb > li ul li a{color:#000;}
+
+.btn-inquiry{position:fixed;right:50px;bottom:50px;z-index:1;}
+
+#container{position: relative;overflow-y:auto;height:100vh;}
+
+#footer{padding:58px 0 42px;background-color:#ad9068;text-align:center;font-size:17px;color:#fff;}
+#footer .foot-menu{display:flex;justify-content:center;gap:0 35px;margin-top:25px;}
+#footer .foot-menu li a{color:#fff;}
+#footer .addr-list{display:flex;justify-content:center;gap:0 35px;margin-top:25px;}
+#footer .copy{margin-top:35px;}
+
+/* swiper & slick & flicking example */
+.ex_wrp{max-width:790px;margin:0 auto;font-family:'Montserrat', 'Noto Sans KR', sans-serif;}
+.ex_wrp pre{display:none;}
+.ex_wrp pre.guide{display:block;}
+.ex_wrp h2{font-size:24px;}
+.ex_wrp .section{margin-top:50px;position: relative;}
+.ex_wrp h3{font-size:18px;padding:0 0 10px;}
+.ex_wrp h3 button{display:inline-block;background-color:#333;color:#fff;padding:5px;border-radius:3px;font-size:12px;}
+.ex_wrp .code-area{padding:20px;background-color:#eee;margin-top:30px;}

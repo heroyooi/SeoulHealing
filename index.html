@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>퍼블리싱 - 코딩맵</title>
+  <link rel="stylesheet" type="text/css" href="./_guide/guide.css" />
+	<script type="text/javascript" src="./_guide/dtree.js"></script>
+</head>
+<body>
+  <div class="guide-wrapper">
+    <div id="content_guide_list">
+      <h1>퍼블리싱 진행표</h1>
+      <h2>진행 표시</h2>
+      <ul>
+  			<li><span style="color:#aeaeae;">■ 작업전</span></li>
+  			<li><span style="color:green;">■ 작업중</span></li>
+  			<li><span style="color:#5727ff;">■ 완료</span></li>
+  			<li><span style="color:#37b4e7;">■ 신규</span></li>
+  			<li><span style="color:#f55;">■ 수정</span></li>
+      </ul>
+      <span id="t_title"></span>
+    </div>
+    <div class="dtree">
+  		<div class="area_btn">
+  			<a href="javascript: b.openAll();"><img src="./_guide/img/btn_expand.gif" alt="Expand All" /></a>
+  			<a href="javascript: b.closeAll();"><img src="./_guide/img/btn_collapse.gif" alt="Collapse All" /></a>
+  		</div>
+  		<script type="text/javascript">
+			//<![CDATA[
+			b = new dTree('b');
+
+			b.add(0, -1, '서울힐링요양병원');
+			b.add(1, 0, '1. PC' );
+			b.add(1.01, 1, '1) 메인','pc/main.html', '완료', '_blank');
+			b.add(1.021, 1, '2-1) 의료진 소개','pc/sub1_1.html', '작업전', '_blank');
+			b.add(1.022, 1, '2-2) 서울힐링 둘러보기','pc/sub1_2.html', '작업전', '_blank');
+			b.add(1.023, 1, '2-3) 서울힐링 이야기','pc/sub1_3.html', '작업전', '_blank');
+			// b.add(1.024, 1, '2-4) 치료비용 안내','pc/sub1_4.html', '작업전', '_blank');
+
+			b.add(1.031, 1, '3-1) 암극복 프로그램','pc/sub2_1.html', '작업전', '_blank');
+			b.add(1.032, 1, '3-2) 맞춤 항암식단','pc/sub2_2.html', '작업전', '_blank');
+			b.add(1.033, 1, '3-3) 항암/방사선 부작용 케어','pc/sub2_3.html', '작업전', '_blank');
+			b.add(1.034, 1, '3-4) 수술후 회복 프로그램','pc/sub2_4.html', '작업전', '_blank');
+			b.add(1.035, 1, '3-5) 힐링 프로그램','pc/sub2_5.html', '작업전', '_blank');
+
+			b.add(1.041, 1, '4-1) 고주파온열 암치료','pc/sub3_1.html', '작업전', '_blank');
+			b.add(1.042, 1, '4-2) 복합면역 치료','pc/sub3_2.html', '작업전', '_blank');
+			b.add(1.043, 1, '4-3) 항산화 치료','pc/sub3_3.html', '작업전', '_blank');
+			b.add(1.044, 1, '4-4) 림프부종 치료','pc/sub3_4.html', '작업전', '_blank');
+			b.add(1.045, 1, '4-5) 개인특화 한방치료','pc/sub3_5.html', '작업전', '_blank');
+			b.add(1.046, 1, '4-6) 암성통증 치료','pc/sub3_6.html', '작업전', '_blank');
+
+			b.add(1.051, 1, '5-1) 암재활 물리치료','pc/sub4_1.html', '작업전', '_blank');
+			b.add(1.052, 1, '5-2) 암재활 운동치료','pc/sub4_2.html', '작업전', '_blank');
+			b.add(1.053, 1, '5-3) 심리재활 치료','pc/sub4_3.html', '작업전', '_blank');
+
+			b.add(2, 0, '2. 모바일' );
+			b.add(2.01, 2, '2) 메인','m/main.html', '작업전', '_blank');
+
+			document.write(b);
+			//]]>
+  		</script>
+  	</div>
+  </div>
+</body>
+</html>
