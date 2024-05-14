@@ -8,7 +8,7 @@ body{width:100%;background: #000;}
 #wrapper{margin:0 auto;background:#fff;}
 #wrapper, #header{min-width:1600px;}
 
-#header{position:absolute;left:0;top:0;margin:0 auto;width:100%;z-index:1;}
+#header{position:absolute;left:0;top:0;margin:0 auto;width:100%;z-index:5;}
 #header, #header #gnb > li ul{background-color:rgba(0, 0, 0, 0.5);}
 #header .inner{width:1600px;height:100px;margin:0 auto;position: relative;}
 #header h1{padding-top:40px;}
