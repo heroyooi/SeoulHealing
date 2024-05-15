@@ -35,7 +35,7 @@
               <li><a href="javascript:;">의료진소개</a></li>
               <li><a href="javascript:;">서울힐링 둘러보기</a></li>
               <li><a href="javascript:;">서울힐링 이야기</a></li>
-              <li><a href="javascript:;">치료비용 안내</a></li>
+              <li><a href="#popup-fee" class="btn-popup-anim-1">치료비용 안내</a></li>
             </ul>
           </li>
           <li>
@@ -68,7 +68,7 @@
             </ul>
           </li>
           <li>
-            <a href="#">1:1문의</a>
+            <a href="#popup-inquiry" class="btn-popup-anim-1">1:1문의</a>
           </li>
         </ul>
         <span class="mark"><img src="img/common/ico_mark.png" alt="인증 의료기관"></span>
@@ -199,7 +199,57 @@
         <p class="copy">copyrightⓒ 서울힐링요양병원.All rights reserved.</p>
       </div><!-- #footer -->
     </div><!-- #container -->
-    <a href="#" class="btn-inquiry"><img src="img/common/btn_inquiry.png" alt="빠른상담"></a>
+    <a href="#popup-inquiry" class="btn-inquiry btn-popup-anim-1"><img src="img/common/btn_inquiry.png" alt="빠른상담"></a>
+
+    <div class="popup-wrap z-anim mfp-hide" id="popup-fee" style="width: 1320px;">
+      <div class="con-wrap">
+        <div><img src="img/sub1/sub1_expense.jpg" alt=""></div>
+      </div>
+    </div>
+
+    <div class="popup-wrap z-anim mfp-hide" id="popup-inquiry" style="width: 540px;">
+      <div class="con-wrap">
+        <p class="s-logo"><img src="img/common/popup_logo.jpg" alt=""></p>
+        <h3 class="tit">빠른상담</h3>
+        <div class="form-area">
+          <form action="" class="mt20">
+            <ul class="form-list">
+              <li>
+                <input type="text" class="input-base" placeholder="이름 입력" />
+              </li>
+              <li>
+                <input type="text" class="input-base" placeholder="연락처 (-없이 입력)" />
+              </li>
+              <li>
+                <textarea class="textarea-base" placeholder="문의사항"></textarea>
+              </li>
+            </ul>
+            <span class="chk-base mt15">
+              <input type="checkbox" id="agree">
+              <label for="agree">개인정보취급방침 동의</label>
+              <a href="javascript:;">[자세히보기]</a>
+            </span>
+            <div class="bnts-wrap mt15">
+              <a href="javascript:;" class="btn-base tp2">상담신청</a>
+            </div>
+          </form>
+          <ul class="other">
+            <li>
+              <a href="tel:1833-7037">
+                <span class="ico"><img src="img/common/popup_icon1.jpg" alt=""></span>
+                <span class="txt">1833-7037</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <span class="ico"><img src="img/common/popup_icon2.jpg" alt=""></span>
+                <span class="txt">공식 블로그</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div><!-- #wrapper -->
 
   <script>
@@ -266,10 +316,13 @@
         prevEl: '.content-swiper-wrap .swiper-btn.prev',
       },
     });
-
-
-    var query = $.urlParam('sample');
-	  if (query === '') {}
+    
+    var query = $.urlParam('popup');
+	  if (query) {
+      setTimeout(() => {
+        $(`[href*="#popup-${query}"]`).click();
+      }, 250);
+    }
   </script>
 </body>
 </html>

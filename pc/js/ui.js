@@ -30,6 +30,7 @@ var GUI = window.GUI || (function(){
       var $win = $(window);
       var $header = _.find('#header');
       var tabUI = _.find('.tab-base');
+      var selectUI = _.find(".select-base");
       var popupUI = _.find('.popup-wrap');
       var csPopupUI = _.find('.cs-popup-wrap');
 
@@ -45,6 +46,34 @@ var GUI = window.GUI || (function(){
           $(this).closest('li').siblings().removeClass('on');
           $(target).show();
           $(target).siblings().hide();
+        });
+      }
+      if (selectUI.length) {
+        selectUI.find('select').each(function(){
+          if ($(this).closest('.select-base').hasClass('disabled')) {
+            return true;
+          }
+          if ($(this).find('option:eq(0)').attr('value') === undefined) {
+            $(this).find('option:eq(0)').val(0);
+          }
+          if (parseInt($(this).val()) === 0) {
+            $(this).closest('.select-base').removeClass('active');
+          } else {
+            $(this).closest('.select-base').addClass('active');
+          }
+        });
+        selectUI.find('select').on("change",function(){
+          if ($(this).closest('.select-base').hasClass('disabled')) {
+            return true;
+          }
+          if (parseInt($(this).val()) === 0) {
+            $(this).closest('.select-base').removeClass('active');
+          } else {
+            $(this).closest('.select-base').addClass('active');
+          }
+          $(this).prev().html($(this).find("option:selected").text());
+        }).prev().html(function() {
+          return $(this).next().find("option:selected").text();
         });
       }
 
