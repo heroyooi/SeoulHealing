@@ -156,7 +156,7 @@ var GUI = window.GUI || (function(){
           callbacks: magnificPopupConfiguration()
         });
 
-		$('.popup-wrap').each(function(){
+		  $('.popup-wrap').each(function(){
           if ($(this).data('width')) {
             $(this).css('width', $(this).data('width'));
           }
@@ -167,18 +167,10 @@ var GUI = window.GUI || (function(){
         csPopupUI.find('.mfp-close').on('click', function(){
           var target = $(this).closest('.cs-fullpage').attr('id');
           closeCSPopup();
-          if (target === 'popup-find-address') $('.mfp-wrap').show(); // 2중 풀페이지 팝업 시
         });
         $('.cs-popup-dimm').on('click', function(){
           var target = $(this).next('.cs-popup-wrap').attr('id');
-          if (target === 'popup-find-address') $('.mfp-wrap').show(); // 2중 풀페이지 팝업 시
           closeCSPopup();
-        });
-
-        resizeScrollFrame($win);
-        
-        $win.on('resize', function(){
-          resizeScrollFrame($win);
         });
       }
     },
@@ -233,3 +225,15 @@ var GUI = window.GUI || (function(){
 $(function(){
   GUI.init();
 });
+
+// 이중 팝업을 열고 닫기 위한 함수
+var openCSPopup = function(id) {
+  $('.cs-popup-dimm#' + id + '-dimm, .cs-popup-wrap#' + id).fadeIn(200);
+};
+var closeCSPopup = function(id) {
+  if (id) {
+    $('.cs-popup-dimm#' + id + '-dimm, .cs-popup-wrap#' + id).fadeOut(200);
+  } else {
+    $('.cs-popup-dimm, .cs-popup-wrap').fadeOut(200);
+  }  
+}

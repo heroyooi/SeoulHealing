@@ -28,16 +28,18 @@ body{width:100%;background: #000;}
 #header #gnb > li ul li a:hover{border-bottom:1px solid #ac9068;}
 #header .mark{position:absolute;right:0;top:0;}
 
-body.main #header, body.main #header #gnb > li ul{background-color:rgba(255, 255, 255, 0.35);}
-body.main #header #gnb > li > a{color:#000;}
-body.main #header #gnb > li.on > a{color:#fff;}
-body.main #header #gnb > li ul li a{color:#000;}
-
 .btn-inquiry{position:fixed;right:50px;bottom:50px;z-index:1;}
 
 #container{position: relative;overflow-y:auto;height:100vh;}
 
-#footer{padding:58px 0 42px;background-color:#ad9068;text-align:center;font-size:17px;color:#fff;}
+body.main #header, body.main #header #gnb > li ul{background-color:rgba(255, 255, 255, 0.35);}
+body.main #header #gnb > li > a{color:#000;}
+body.main #header #gnb > li.on > a{color:#fff;}
+body.main #header #gnb > li ul li a{color:#000;}
+body.main #container{height:auto;}
+
+#footer{background-color:#ad9068;text-align:center;font-size:17px;color:#fff;}
+#footer .foot-inner{padding:58px 0 42px;}
 #footer .foot-menu{display:flex;justify-content:center;gap:0 35px;margin-top:25px;}
 #footer .foot-menu li a{color:#fff;}
 #footer .addr-list{display:flex;justify-content:center;gap:0 35px;margin-top:25px;}
