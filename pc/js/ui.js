@@ -182,6 +182,7 @@ var GUI = window.GUI || (function(){
         if(menu && sub){
           $("#gnb > li.on a").next().slideUp("fast");
           $("#gnb > li.on").removeClass("on");
+          $('#header').removeClass('active');
         }
       }
 
@@ -201,7 +202,8 @@ var GUI = window.GUI || (function(){
 
         $(this).closest('li').addClass("on");
         $(this).next().stop().slideDown("fast");
-      })
+        $('#header').addClass('active');
+      });
 
       $("#gnb").mouseenter(function(){
         menu=0;
@@ -218,6 +220,16 @@ var GUI = window.GUI || (function(){
         sub=1;
         setTimeout(hide, 500);
       });
+
+      if (!$('body').hasClass('main')) {
+        $('#container').on('load scroll', function(){
+          if ($(this).scrollTop() == 0) {
+            $('#header').removeClass('change');
+          } else {
+            $('#header').addClass('change');
+          }
+        });
+      }
     },
   }
 }());

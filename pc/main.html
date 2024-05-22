@@ -18,7 +18,7 @@
   <div id="wrapper">
     <div id="header">
       <div class="inner">
-        <h1><a href="javascript:;"><img src="img/common/h1_logo.png" alt="서울힐링요양병원"></a></h1>
+        <h1><a href="javascript:;">서울힐링요양병원</a></h1>
         <div class="hospital-swiper swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><a href="#"><img src="img/common/hospital_01.png" alt=""></a></div>
@@ -409,11 +409,9 @@
       // normalScrollElements: '#fullpage_bottom',	
       onLeave: function(origin, destination, direction){
         if(destination==1){
-          $('body').removeClass('fixed_top');
-          $('#header').removeClass('fixed');
+          $('#header').removeClass('active');
         }else{
-          $('body').addClass('fixed_top');
-          $('#header').addClass('fixed');
+          $('#header').addClass('active');
         }
         
       },

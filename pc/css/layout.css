@@ -9,9 +9,10 @@ body{width:100%;background: #000;}
 #wrapper, #header{min-width:1600px;}
 
 #header{position:absolute;left:0;top:0;margin:0 auto;width:100%;z-index:5;}
-#header, #header #gnb > li ul{background-color:rgba(0, 0, 0, 0.35);}
+#header, #header #gnb > li ul{background-color:rgba(0, 0, 0, 0.35);transition:background-color 0.2s;}
 #header .inner{width:1600px;height:100px;margin:0 auto;position: relative;}
 #header h1{padding-top:40px;}
+#header h1 a{display:inline-block;width:242px;height:36px;background:url(../img/common/h1_logo.png) 0 0 no-repeat;font-size:0;vertical-align:top;}
 #header .hospital-swiper{position: absolute;left:334px;top:26px;width:150px;}
 #header .hospital-swiper .swiper-slide{opacity:0 !important;}
 #header .hospital-swiper .swiper-slide-active{opacity:1 !important;}
@@ -19,12 +20,12 @@ body{width:100%;background: #000;}
 #header #gnb{position:absolute;left:594px;top:31px;}
 #header #gnb > li{float:left;margin-left:49px;position: relative;}
 #header #gnb > li:first-child{margin-left:0;}
-#header #gnb > li > a{font-size:19px;color:#fff;font-weight:500;display:inline-block;padding:9px 18px;border-radius:15px;}
-#header #gnb > li.on > a{background-color:#a07c46;color:#fff;}
+#header #gnb > li > a{font-size:19px;font-weight:500;display:inline-block;padding:9px 18px;border-radius:15px;}
+#header #gnb > li.on > a{background-color:#a07c46;}
 #header #gnb > li ul{padding:25px 30px;position:absolute;left:0;top:69px;border-radius:0 0 15px 15px;white-space:nowrap;display:none;}
 #header #gnb > li ul li{margin-top:30px;}
 #header #gnb > li ul li:first-child{margin-top:0;}
-#header #gnb > li ul li a{font-size:18px;color:#fff;}
+#header #gnb > li ul li a{font-size:18px;}
 #header #gnb > li ul li a:hover{border-bottom:1px solid #ac9068;}
 #header .mark{position:absolute;right:0;top:0;}
 
@@ -32,11 +33,23 @@ body{width:100%;background: #000;}
 
 #container{position: relative;overflow-y:auto;height:100vh;}
 
+/* #header #gnb > li > a{color:#fff;}
+#header #gnb > li.on > a{color:#fff;}
+#header #gnb > li ul li a{color:#fff;}
+
 body.main #header, body.main #header #gnb > li ul{background-color:rgba(255, 255, 255, 0.35);}
 body.main #header #gnb > li > a{color:#000;}
 body.main #header #gnb > li.on > a{color:#fff;}
-body.main #header #gnb > li ul li a{color:#000;}
+body.main #header #gnb > li ul li a{color:#000;} */
+#header, #header #gnb > li ul{background-color:rgba(255, 255, 255, 0.35);}
+#header #gnb > li > a{color:#000;}
+#header #gnb > li.on > a{color:#fff;}
+#header #gnb > li ul li a{color:#000;}
+
 body.main #container{height:auto;}
+body.main #header.active, body.main #header.active #gnb > li ul,
+#header.active, #header.active #gnb > li ul,
+#header.change, #header.change #gnb > li ul{background-color:#fff;}
 
 #footer{background-color:#ad9068;text-align:center;font-size:17px;color:#fff;}
 #footer .foot-inner{padding:58px 0 42px;}
