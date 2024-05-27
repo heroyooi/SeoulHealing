@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+.menu-swiper-wrap{position: relative;overflow:hidden;}
+.menu-swiper-wrap .swiper-slide{text-align:center;}
+.menu-swiper-wrap .swiper-slide a{font-size:11px;color:#282828;display:block;padding:15px 0;}
+.menu-swiper-wrap .swiper-slide.on a{color:#ad9068;font-weight:500;}
+.menu-swiper-wrap .swiper-slide.on{border-bottom:1px solid #ad9068;}
+.menu-swiper-wrap .swiper-btn{display:inline-block;width:7px;height:13.5px;font-size:0;position: absolute;top:14px;z-index:1;}
+.menu-swiper-wrap .swiper-btn.prev{left:9px;background:url(../img/sub/ico_arrow_l.png) 50% 50% no-repeat;background-size:7px auto;}
+.menu-swiper-wrap .swiper-btn.next{right:9px;background:url(../img/sub/ico_arrow_r.png) 50% 50% no-repeat;background-size:7px auto;}
+
+.sub-content-wrap{position:relative;}
+.sub-content-wrap .inner{margin:0 auto;}
+.sub-content-wrap .sub-tit{color:#000;text-align:center;margin-bottom:25px;}
+.sub-content-wrap .sub-tit span{font-size:14px;letter-spacing:-1px;}
+.sub-content-wrap .sub-tit strong{font-size:19px;display:block;font-weight:bold;margin-top:5px;}
+
+.facility-wrap{padding:30px 12.5px 40px;background-color:#f5f5f4;}
+.facility-swiper{position: relative;overflow:hidden;}
+.facility-swiper .caption{position: absolute;left:0;bottom:0;width:100%;font-size:12px;color:#fff;text-align:center;padding:5px 0;background-color:#ad9068;}
+.facility-swiper .swiper-button-prev{left:20px;}
+.facility-swiper .swiper-button-next{right:20px;transform:rotate(180deg);}
+.facility-swiper .swiper-button-prev,
+.facility-swiper .swiper-button-next{color:#fff;width:14px;height:22px;background:url(../img/sub1/btn_slide_arrow.png) 50% 50% no-repeat;font-size:0;}
+.facility-swiper .swiper-button-prev:after,
+.facility-swiper .swiper-button-next:after{display:none;}
+.facility-thumb{display:flex;flex-wrap:wrap;gap:2px;margin-top:10px;}
+.facility-thumb li{width:calc(20% - 1.6px);cursor:pointer;position: relative;}
+.facility-thumb li img{filter:grayscale(100%);}
+.facility-thumb li.active img{filter:grayscale(0%);}
+.facility-thumb li.active::before{content:'';display:block;width:100%;height:100%;border:2px solid #ad9068;position: absolute;left:0;top:0;z-index:1;}
+
+.board-wrap{padding:40px 12.5px 60px;}
+.board-list-area{border-top:3px solid #000;margin-top:34px;padding-top:39px;}
+.board-list{display:flex;gap:50px 10px;flex-wrap:wrap;}
+.board-list li{margin-top:45px;}
+.board-list li:first-child{margin-top:0;}
+.board-list li a{display:block;}
+.board-list li dt img{width:100%;}
+.board-list li dd{padding-top:12px;color:#000;}
+.board-list li dd span{display:block;word-wrap:break-word;}
+.board-list li dd .tit{font-size:17px;font-weight:bold;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.board-list li dd .con, .board-list li dd .date{font-size:12px;color:#3c3c3c;}
+.board-list li dd .con{text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height:16px;max-height:32px;margin-top:10px;overflow:hidden;}
+.board-list li dd .date{margin-top:20px;color:#3b3b3b;}
+
+.pagination-area{text-align:center;margin-top:60px;}
+.pagination{font-size:0;border:1px solid #e3e3e3;display:inline-block;}
+.pagination a{display:inline-block;border-left:1px solid #e3e3e3;width:30px;height:30px;font-size:12px;color:#1e1e1e;font-weight:500;vertical-align:middle;line-height:30px;position: relative;}
+.pagination a:first-child{border-left:0;}
+.pagination a.on{background-color:#ad9068;color:#fff;}
+.pagination a.btn{font-size:0;}
+.pagination a.btn::before{content:'';display:block;width:30px;height:30px;position: absolute;left:0;top:0;}
+.pagination a.btn.first::before{background:url(../img/common/b_arrow_twin.png) 50% 50% no-repeat;}
+.pagination a.btn.prev::before{background:url(../img/common/b_arrow.png) 50% 50% no-repeat;}
+.pagination a.btn.next::before{background:url(../img/common/b_arrow.png) 50% 50% no-repeat;transform:rotate(180deg);}
+.pagination a.btn.last::before{background:url(../img/common/b_arrow_twin.png) 50% 50% no-repeat;transform:rotate(180deg);}
+
+/* #popup-privacy .cs-popup-inner{width: 1320px; margin: 0 auto;height:calc(100vh - 30px);overflow:hidden;} */
+#popup-privacy .mfp-close{right:22px;}
+.privacy-area > ul > li{font-size:14px;color:#000;line-height:1.4;margin-top:25px;}
+.privacy-area > ul > li:first-child{margin-top:0;}
+.privacy-area > ul > li strong{font-size:18px;font-weight:bold;display:block;margin-bottom:10px;}
+.privacy-area > ul > li strong.big{font-size:22px;}
+.privacy-area > ul > li li{margin-top:10px;text-indent:-15px;padding-left:15px;}

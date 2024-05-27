@@ -23,7 +23,7 @@
 .main-visual .slick-slide{height:100vh;}
 .main-visual .slick-slide img{}
 .main-content{/*padding:210px 0 150px;*/overflow:hidden;}
-.main-content .tit{font-size:29px;color:#000;text-align:center;}
+.main-content .tit{font-size:29px;color:#000;text-align:center;letter-spacing:-3px;}
 .main-content .tit strong{font-size:55px;font-weight:bold;display:block;margin-top:20px;}
 
 .main-content .content-detail{margin:0 auto;width:1600px;position: relative;display:flex;margin-top:85px;height:460px;}
