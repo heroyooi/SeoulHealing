@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>서울힐링요양병원</title>
   <link rel="stylesheet" href="css/common.css">
   <script src="js/jquery.min.js"></script>
@@ -16,12 +17,23 @@
   <div id="wrapper">
     <div id="header">
       <div class="inner">
-        <h1><a href="javascript:;">서울힐링요양병원</a></h1>
+        <h1><a href="javascript:;"><img src="img/common/h1_logo_w.png" alt="서울힐링요양병원" /></a></h1>
+        <a href="javascript:;" class="btn-menu" onclick="openGNB();"><img src="img/common/btn_menu.png" alt="메뉴 버튼" /></a>
+      </div>
+    </div><!-- #header -->
+    <div class="menu-dimm"></div>
+    <div class="menu-wrap">
+      <div class="m-header">
+        <h2><a href="javascript:;"><img src="img/common/h1_logo.png" alt="서울힐링요양병원" /></a></h2>
+        <button class="btn-close">닫기</button>
+      </div>
+      <div class="m-container">
         <ul id="gnb">
           <li>
             <a href="#">서울힐링 소개</a>
             <ul>
               <li><a href="javascript:;">의료진소개</a></li>
+              <li><a href="javascript:;">서울힐링 진료 통계</a></li>
               <li><a href="javascript:;">서울힐링 둘러보기</a></li>
               <li><a href="javascript:;">서울힐링 이야기</a></li>
               <li><a href="#popup-fee" class="btn-popup-anim-1">치료비용 안내</a></li>
@@ -60,45 +72,48 @@
             <a href="#popup-inquiry" class="btn-popup-anim-1">1:1문의</a>
           </li>
         </ul>
-        <span class="mark"><img src="img/common/ico_mark.png" alt="인증 의료기관"></span>
+        <ul id="util">
+          <li class="tel"><a href="#">전화걸기</a></li>
+          <li class="location"><a href="#">오시는길</a></li>
+          <li class="blog"><a href="#">블로그</a></li>
+        </ul>
       </div>
-    </div><!-- #header -->
+    </div><!-- .menu-wrap -->
     <div id="container">
-      <div class="sub-wrap sub2-1" data-aos="fade">
+      <div class="sub-wrap" data-aos="fade">
         <div class="sub-top-wrap">
-          <p class="tit">24주, 끝내 이겨낼 것입니다</p>
+          <img src="img/sub2/sub2_top1.jpg" alt="">
         </div><!-- .sub-top-wrap -->
-        <div class="sub-menu-wrap">
-          <ul>
-            <li class="on"><a href="javascript:;">암극복 프로그램</a></li>
-            <li><a href="javascript:;">맞춤 항암식단</a></li>
-            <li><a href="javascript:;">항암/방사선 부작용 케어</a></li>
-            <li><a href="javascript:;">수술후 관리 프로그램</a></li>
-            <li><a href="javascript:;">힐링 프로그램</a></li>
-          </ul>
-        </div><!-- .sub-menu-wrap -->
-        <div class="sub-content-wrap">
-          <div class="sub-content-1"></div><!-- .sub-content-1 -->
-          <div class="sub-content-program">
-            <div class="inner">
-              <p class="sub-tit">
-                <span>서울힐링도 환우분들도 모두 ‘온 정성’을 다하는</span>
-                <strong>24주 암극복 프로그램</strong>
-              </p>
-              <div><img src="img/sub/sub_program1.png" alt=""></div>
+        <div class="menu-swiper-wrap">
+          <div class="menu-swiper swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide on"><a href="#">암극복 프로그램</a></div>
+              <div class="swiper-slide"><a href="#">맞춤 항암식단</a></div>
+              <div class="swiper-slide"><a href="#">항암/방사선 부작용 케어</a></div>
+              <div class="swiper-slide"><a href="#">수술후 관리 프로그램</a></div>
+              <div class="swiper-slide"><a href="#">힐링 프로그램</a></div>
             </div>
-          </div><!-- .sub-content-program -->
-          <div class="sub-content-3"></div><!-- .sub-content-3 -->
-        </div><!-- sub-content -->
+          </div>
+          <a href="#" class="swiper-btn prev">이전</a>
+          <a href="#" class="swiper-btn next">다음</a>
+        </div><!-- .menu-swiper-wrap -->
+        <div class="sub-content-wrap">
+          <div class="sub-content">
+            <img src="img/sub2/sub2_bg1_1.jpg" alt="">
+          </div><!-- .sub-content -->
+          <div class="sub-content">
+            <img src="img/sub2/sub2_bg1_2.jpg" alt="">
+          </div><!-- .sub-content -->
+        </div><!-- sub-content-wrap -->
       </div><!-- .sub-wrap -->
       <div id="footer">
         <div class="foot-inner">
-          <h2><a href="javascript:;"><img src="img/common/h2_logo.png" alt=""></a></h2>
           <ul class="foot-menu">
             <li><a href="javascript:;">이용약관</a></li>
             <li><a href="javascript:;">개인정보취급방침</a></li>
             <li><a href="javascript:;">비급여진료비</a></li>
           </ul>
+          <h2><a href="javascript:;"><img src="img/common/h2_logo.png" alt=""></a></h2>
           <ul class="addr-list">
             <li>주소 : 서울특별시 송파구 가락동 36-1</li>
             <li>대표번호  :  1833 - 7037</li>
@@ -110,15 +125,15 @@
     </div><!-- #container -->
     <a href="#popup-inquiry" class="btn-inquiry btn-popup-anim-1"><img src="img/common/btn_inquiry.png" alt="빠른상담"></a>
 
-    <div class="popup-wrap z-anim mfp-hide" id="popup-fee" style="width: 1320px;">
+    <div class="popup-wrap z-anim mfp-hide" id="popup-fee">
       <div class="con-wrap">
-        <div><img src="img/sub1/sub1_expense.jpg" alt=""></div>
+        <div><img src="img/sub1/sub1_expense.png" alt=""></div>
       </div>
     </div>
 
-    <div class="popup-wrap z-anim mfp-hide" id="popup-inquiry" style="width: 540px;">
+    <div class="popup-wrap z-anim mfp-hide" id="popup-inquiry">
       <div class="con-wrap">
-        <p class="s-logo"><img src="img/common/popup_logo.jpg" alt=""></p>
+        <p class="s-logo"><img src="img/common/popup_logo.png" alt=""></p>
         <h3 class="tit">빠른상담</h3>
         <div class="form-area">
           <form action="" class="mt20">
@@ -145,13 +160,13 @@
           <ul class="other">
             <li>
               <a href="tel:1833-7037">
-                <span class="ico"><img src="img/common/popup_icon1.jpg" alt=""></span>
+                <span class="ico"><img src="img/common/popup_icon1.png" alt=""></span>
                 <span class="txt">1833-7037</span>
               </a>
             </li>
             <li>
               <a href="javascript:;">
-                <span class="ico"><img src="img/common/popup_icon2.jpg" alt=""></span>
+                <span class="ico"><img src="img/common/popup_icon2.png" alt=""></span>
                 <span class="txt">공식 블로그</span>
               </a>
             </li>
@@ -159,6 +174,7 @@
         </div>
       </div>
     </div>
+
     <div class="cs-popup-dimm" id="popup-privacy-dimm"></div>
     <div class="cs-popup-wrap" id="popup-privacy">
       <div class="cs-popup-inner">
@@ -264,5 +280,8 @@
       </div>
     </div><!-- .cs-popup-wrap -->
   </div><!-- #wrapper -->
+  <script>
+    
+  </script>
 </body>
 </html>
