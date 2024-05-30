@@ -11,8 +11,8 @@ body{width:100%;background: #000;}
 #header{position:absolute;left:0;top:0;margin:0 auto;width:100%;z-index:5;}
 #header, #header #gnb > li ul{background-color:rgba(0, 0, 0, 0.35);transition:background-color 0.2s;}
 #header .inner{width:1600px;height:100px;margin:0 auto;position: relative;}
-#header h1{padding-top:32px;}
-#header h1 a{display:inline-block;width:242px;height:36px;background:url(../img/common/h1_logo.png) 0 0 no-repeat;font-size:0;vertical-align:top;}
+#header h1{padding-top:38px;}
+#header h1 a{display:inline-block;width:242px;height:26px;background:url(../img/common/h1_logo.png) 0 0 no-repeat;font-size:0;vertical-align:top;}
 #header .hospital-swiper{position: absolute;left:334px;top:26px;width:150px;}
 #header .hospital-swiper .swiper-slide{opacity:0 !important;}
 #header .hospital-swiper .swiper-slide-active{opacity:1 !important;}

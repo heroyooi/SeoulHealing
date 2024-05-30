@@ -26,6 +26,9 @@
 [class*=popup-wrap] .tit{font-size:30px;color:#3a3a3a;font-weight:bold;text-align:center;margin-top:45px;}
 [class*=popup-wrap]#popup-fee{border-radius:0;;height:calc(100vh - 40px);overflow-y:auto;}
 [class*=popup-wrap]#popup-fee .con-wrap{padding:100px 20px}
+[class*=popup-wrap].popup-food{border-radius:0;}
+[class*=popup-wrap].popup-food .con-wrap{padding:0;}
+[class*=popup-wrap].popup-food button.mfp-close, .popup-wrap button.mfp-arrow{width:30px;height:30px;background:url(../img/common/btn_close.png) 0 0 no-repeat;}
 
 .cs-popup-dimm{position:fixed;left:0;top:0;width:100%;height:100%;background:#0b0b0b;opacity:0.8;z-index:1045;display:none;}
 .cs-popup-wrap{position:fixed;z-index:1045;left:0;top:50%;transform:translateY(-50%);width:100%;display:none;}
