@@ -28,12 +28,15 @@
             <div class="swiper-slide"><a href="#"><img src="img/common/hospital_05.png" alt=""></a></div>
             <div class="swiper-slide"><a href="#"><img src="img/common/hospital_06.png" alt=""></a></div>
           </div>
+          <a href="" class="swiper-button-prev"></a>
+          <a href="" class="swiper-button-next"></a>
         </div>
         <ul id="gnb">
           <li>
             <a href="#">서울힐링 소개</a>
             <ul>
               <li><a href="javascript:;">의료진소개</a></li>
+              <li><a href="javascript:;">서울힐링 진료 통계</a></li>
               <li><a href="javascript:;">서울힐링 둘러보기</a></li>
               <li><a href="javascript:;">서울힐링 이야기</a></li>
               <li><a href="#popup-fee" class="btn-popup-anim-1">치료비용 안내</a></li>
@@ -79,22 +82,29 @@
       <div class="main-wrap">
         <div class="section main-visual-wrap">
           <div class="main-visual">
-            <div class="slick-slide"><a href="#"><img src="img/main/main_visual_01.jpg" alt=""></a></div>
-            <div class="slick-slide"><a href="#"><img src="img/main/main_visual_02.jpg" alt=""></a></div>
-            <div class="slick-slide"><a href="#"><img src="img/main/main_visual_03.jpg" alt=""></a></div>
-            <div class="slick-slide"><a href="#"><img src="img/main/main_visual_04.jpg" alt=""></a></div>
-            <div class="slick-slide"><a href="#"><img src="img/main/main_visual_05.jpg" alt=""></a></div>
-            <div class="slick-slide"><a href="#"><img src="img/main/main_visual_06.jpg" alt=""></a></div>
+            <div class="slick-slide"><div class="img-wrap"><img src="img/main/main_visual_01.jpg" alt=""></div></div>
+            <div class="slick-slide">
+              <div class="img-wrap">
+                <img src="img/main/main_visual_02.jpg" alt="">
+                <a href="sub1_2.html" class="btn-view" style="width:10%;height:5%;left:26%;bottom:6.5%;">통계자세히 보기</a>
+              </div>
+            </div>
+            <div class="slick-slide"><div class="img-wrap"><img src="img/main/main_visual_03.jpg" alt=""></div></div>
+            <div class="slick-slide"><div class="img-wrap"><img src="img/main/main_visual_04.jpg" alt=""></div></div>
+            <div class="slick-slide"><div class="img-wrap"><img src="img/main/main_visual_05.jpg" alt=""></div></div>
+            <div class="slick-slide"><div class="img-wrap"><img src="img/main/main_visual_06.jpg" alt=""></div></div>
           </div>
           <div class="slick-btn-area">
-            <div class="slick-btn-l">
-              <a href="#" class="slick-btn prev">이전</a>
-              <p class="count"><span class="current">01</span> / <span class="total"></span></p>
-              <a href="#" class="slick-btn next">다음</a>
-            </div>
-            <div class="slick-btn-r">
-              <a href="#" class="slick-btn pause">멈춤</a>
-              <a href="#" class="slick-btn play">실행</a>
+            <div class="slick-btn-inner">
+              <div class="slick-btn-l">
+                <a href="#" class="slick-btn prev">이전</a>
+                <p class="count"><span class="current">01</span> / <span class="total"></span></p>
+                <a href="#" class="slick-btn next">다음</a>
+              </div>
+              <div class="slick-btn-r">
+                <a href="#" class="slick-btn pause">멈춤</a>
+                <a href="#" class="slick-btn play">실행</a>
+              </div>
             </div>
           </div>
         </div><!-- .main-visual-wrap -->
@@ -157,13 +167,27 @@
               <p class="txt-sm">이겨냅시다! <br />서울힐링이 함께  싸우겠습니다</p>
             </div><!-- .content-label -->
             <div class="content-area">
-              <img src="img/main/bg_content_03.png" alt="">
+              <div class="program-area main">
+                <img src="img/main/bg_content_03.png" alt="">
+                <a href="#" class="btn-view btn1">수술전 체력강화 프로그램, 자세히 알아보기</a>
+                <a href="#" class="btn-view btn2">수술후 회복 프로그램, 자세히 알아보기</a>
+                <a href="#" class="btn-view btn3">항암/방사선 치료 중 부작용케어 프로그램, 자세히 알아보기</a>
+                <a href="#" class="btn-view btn4">항암/방사선 치료 후 일상복귀 프로그램, 자세히 알아보기</a>
+                <a href="#" class="btn-view btn5">재발/전이 방지 면역강화 프로그램, 자세히 알아보기</a>
+              </div>
             </div><!-- .content-area -->
           </div><!-- .content-detail -->
         </div><!-- .main-content-3 -->
 
         <div class="section main-content main-content-4">
-          <img src="img/main/main_bg4.png" alt="">
+          <div class="food-area">
+            <img src="img/main/main_bg4.png" alt="">
+            <a href="#" class="btn-view btn1">저지방식</a>
+            <a href="#" class="btn-view btn2">위절제식</a>
+            <a href="#" class="btn-view btn3">저잔사식</a>
+            <a href="#" class="btn-view btn4">당뇨식</a>
+            <a href="#" class="btn-view btn5">저염식</a>
+          </div>
           <!--
           <p class="tit">환우의 컨디션과 1:1 영양 상담을 통한 <strong>환우별 맞춤 항암식단</strong></p>
           <div class="content-detail">
@@ -196,7 +220,6 @@
           <div class="foot-inner">
             <h2><a href="javascript:;"><img src="img/common/h2_logo.png" alt=""></a></h2>
             <ul class="foot-menu">
-              <li><a href="javascript:;">이용약관</a></li>
               <li><a href="javascript:;">개인정보취급방침</a></li>
               <li><a href="javascript:;">비급여진료비</a></li>
             </ul>
@@ -253,7 +276,7 @@
               </a>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href="https://blog.naver.com/yezacdoctor">
                 <span class="ico"><img src="img/common/popup_icon2.jpg" alt=""></span>
                 <span class="txt">공식 블로그</span>
               </a>
@@ -417,19 +440,14 @@
       },
     });
     
-    new Swiper('.hospital-swiper', {
-      effect: "fade",
-      autoplay: {
-        delay: 3000,
-      },
-    });
+    
     $('.main-visual').on('init', function(event, slick){
       $('.main-visual-wrap .slick-btn-area .count span.total').text(`0${$('.main-visual .slick-slide').length}`);
     })
     var mainVisual = $('.main-visual').slick({
       autoplay: true,
       autoplaySpeed: 3000,
-      fade: true,
+      // fade: true,
       dots: false,
       infinite: true,
       speed: 500,

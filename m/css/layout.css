@@ -27,6 +27,7 @@ body{width:100%;}
 #gnb > li.on > a{color:#966d34;font-weight:500;border-bottom:2px solid #966d34;}
 #gnb > li.on > a::after,
 #gnb > li > ul > li > a::after{background:url(../img/common/ico_arrow_b.png) 50% 50% no-repeat;background-size:auto 15px;}
+#gnb > li > ul > li > a::after{display:none;}
 #gnb > li.on > ul{display:block;}
 
 #util{position: absolute;left:0;bottom:0;width:100%;display:flex;border-top:1px solid #cacaca;background-color:#fff;}

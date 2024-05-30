@@ -1,5 +1,22 @@
 @charset "utf-8";
 
+.btn-view{display:inline-block;background-color:gold;position:absolute;font-size:0;opacity:0;}
+.program-area{position: relative;}
+.program-area .btn-view{width:80%;height:13%;top:0%;left:9%;}
+.program-area .btn-view.btn1{top:27%;}
+.program-area .btn-view.btn2{top:40.5%;}
+.program-area .btn-view.btn3{top:53.7%;}
+.program-area .btn-view.btn4{top:66.9%;}
+.program-area .btn-view.btn5{top:81%;}
+
+.food-area{position:relative;}
+.food-area .btn-view{width:38%;height:20%;}
+.food-area .btn-view.btn1{left:12%;top:37%;}
+.food-area .btn-view.btn2{right:11%;top:37%;}
+.food-area .btn-view.btn3{left:30%;bottom:7%;}
+.food-area .btn-view.btn4{left:9%;bottom:20%;width:25%;}
+.food-area .btn-view.btn5{right:7%;bottom:20%;width:25%;}
+
 .menu-swiper-wrap{position: relative;overflow:hidden;}
 .menu-swiper-wrap .swiper-slide{text-align:center;}
 .menu-swiper-wrap .swiper-slide a{font-size:11px;color:#282828;display:block;padding:15px 0;}

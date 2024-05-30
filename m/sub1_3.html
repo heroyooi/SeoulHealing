@@ -105,6 +105,10 @@
             <div class="facility-swiper" id="fac-swiper-1">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
+                  <img src="img/sub1/sub1_facility1_4.png" alt="">
+                  <span class="caption">통합치료</span>
+                </div>
+                <div class="swiper-slide">
                   <img src="img/sub1/sub1_facility1_1.png" alt="">
                   <span class="caption">고주파온열치료실</span>
                 </div>
@@ -115,10 +119,6 @@
                 <div class="swiper-slide">
                   <img src="img/sub1/sub1_facility1_3.png" alt="">
                   <span class="caption">통합치료실</span>
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/sub1/sub1_facility1_4.png" alt="">
-                  <span class="caption">통합치료</span>
                 </div>
                 <div class="swiper-slide">
                   <img src="img/sub1/sub1_facility1_5.png" alt="">
@@ -196,15 +196,23 @@
                   <img src="img/sub1/sub1_facility3_9.jpg" alt="">
                   <span class="caption">옥상 힐링정원</span>
                 </div>
+                <div class="swiper-slide">
+                  <img src="img/sub1/sub1_facility3_10.jpg" alt="">
+                  <span class="caption">노상주차장,타워주차장</span>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/sub1/sub1_facility3_11.jpg" alt="">
+                  <span class="caption">서울힐링요양병원</span>
+                </div>
               </div>
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
             </div>
             <ul class="facility-thumb" id="fac-thumb-1">
-              <li class="active"><img src="img/sub1/sub1_facility1_1.png" alt=""></li>
+              <li class="active"><img src="img/sub1/sub1_facility1_4.png" alt=""></li>
+              <li><img src="img/sub1/sub1_facility1_1.png" alt=""></li>
               <li><img src="img/sub1/sub1_facility1_2.png" alt=""></li>
               <li><img src="img/sub1/sub1_facility1_3.png" alt=""></li>
-              <li><img src="img/sub1/sub1_facility1_4.png" alt=""></li>
               <li><img src="img/sub1/sub1_facility1_5.png" alt=""></li>
               <li><img src="img/sub1/sub1_facility1_6.png" alt=""></li>
               <li><img src="img/sub1/sub1_facility1_7.png" alt=""></li>
@@ -287,7 +295,7 @@
               </a>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href="https://blog.naver.com/yezacdoctor">
                 <span class="ico"><img src="img/common/popup_icon2.png" alt=""></span>
                 <span class="txt">공식 블로그</span>
               </a>
@@ -404,7 +412,10 @@
   </div><!-- #wrapper -->
   <script>
     var tabSwiper1 = new Swiper('.facility-swiper#fac-swiper-1', {
-      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      // loop: true,
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

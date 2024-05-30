@@ -84,12 +84,12 @@
       <div class="main-wrap">
         <div class="section main-visual-wrap">
           <div class="main-visual">
-            <div class="slick-slide"><a href ="#"><img src="img/main/main_visual_01.png" alt=""></a></div>
-            <div class="slick-slide"><a href="#"><img src="img/main/main_visual_02.png" alt=""></a></div>
-            <div class="slick-slide"><a href="#"><img src="img/main/main_visual_03.png" alt=""></a></div>
-            <div class="slick-slide"><a href="#"><img src="img/main/main_visual_04.png" alt=""></a></div>
-            <div class="slick-slide"><a href="#"><img src="img/main/main_visual_05.png" alt=""></a></div>
-            <div class="slick-slide"><a href="#"><img src="img/main/main_visual_06.png" alt=""></a></div>
+            <div class="slick-slide"><img src="img/main/main_visual_01.png" alt=""></div>
+            <div class="slick-slide"><img src="img/main/main_visual_02.png" alt=""></div>
+            <div class="slick-slide"><img src="img/main/main_visual_03.png" alt=""></div>
+            <div class="slick-slide"><img src="img/main/main_visual_04.png" alt=""></div>
+            <div class="slick-slide"><img src="img/main/main_visual_05.png" alt=""></div>
+            <div class="slick-slide"><img src="img/main/main_visual_06.png" alt=""></div>
           </div>
           <div class="slick-btn-area">
             <div class="slick-btn-l">
@@ -159,11 +159,25 @@
         </div><!-- .main-content-2 -->
 
         <div class="section main-content main-content-3">
-          <img src="img/sub/bg_progam.png" alt="">
+          <div class="program-area">
+            <img src="img/sub/bg_progam.png" alt="">
+            <a href="#" class="btn-view btn1">수술전 체력강화 프로그램, 자세히 알아보기</a>
+            <a href="#" class="btn-view btn2">수술후 회복 프로그램, 자세히 알아보기</a>
+            <a href="#" class="btn-view btn3">항암/방사선 치료 중 부작용케어 프로그램, 자세히 알아보기</a>
+            <a href="#" class="btn-view btn4">항암/방사선 치료 후 일상복귀 프로그램, 자세히 알아보기</a>
+            <a href="#" class="btn-view btn5">재발/전이 방지 면역강화 프로그램, 자세히 알아보기</a>
+          </div>
         </div><!-- .main-content-3 -->
 
         <div class="section main-content main-content-4">
-          <img src="img/main/main_bg4.png" alt="">
+          <div class="food-area">
+            <img src="img/main/main_bg4.png" alt="">
+            <a href="#" class="btn-view btn1">저지방식</a>
+            <a href="#" class="btn-view btn2">위절제식</a>
+            <a href="#" class="btn-view btn3">저잔사식</a>
+            <a href="#" class="btn-view btn4">당뇨식</a>
+            <a href="#" class="btn-view btn5">저염식</a>
+          </div>
         </div><!-- .main-content-4 -->
 
         <div class="section main-content main-content-5">
@@ -233,7 +247,7 @@
               </a>
             </li>
             <li>
-              <a href="javascript:;">
+              <a href="https://blog.naver.com/yezacdoctor">
                 <span class="ico"><img src="img/common/popup_icon2.png" alt=""></span>
                 <span class="txt">공식 블로그</span>
               </a>
@@ -362,7 +376,7 @@
     var mainVisual = $('.main-visual').slick({
       autoplay: true,
       autoplaySpeed: 3000,
-      fade: true,
+      // fade: true,
       dots: false,
       infinite: true,
       speed: 500,

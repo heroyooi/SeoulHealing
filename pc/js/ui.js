@@ -29,10 +29,22 @@ var GUI = window.GUI || (function(){
       var _ = $this;
       var $win = $(window);
       var $header = _.find('#header');
-      var tabUI = _.find('.tab-base');
+      var tabUI = _.find('.tab-base, .search-tab');
       var selectUI = _.find(".select-base");
       var popupUI = _.find('.popup-wrap');
       var csPopupUI = _.find('.cs-popup-wrap');
+
+      var hospitalSwiper = new Swiper('.hospital-swiper', {
+        effect: "fade",
+        autoplay: {
+          delay: 3000,
+        },
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 
       if (tabUI.length) {
         tabUI.each(function(){
