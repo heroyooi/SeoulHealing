@@ -56,6 +56,13 @@
 .sub-wrap.sub2-1 .sub-top-wrap{background:url(../img/sub2/sub2_top_bg1.jpg) 50% 0 no-repeat;}
 .sub-wrap.sub2-1 .sub-content-1{height:648px;background:url(../img/sub2/sub2_bg1_1.jpg) 50% 0 no-repeat;}
 .sub-wrap.sub2-1 .sub-content-3{height:9164px;background:url(../img/sub2/sub2_bg1_2.jpg) 50% 0 no-repeat;}
+.sub-wrap.sub2-1 .sub-content-3 .inner{width:1280px;height:100%;margin:0 auto;position: relative;}
+.sub-wrap.sub2-1 .sub-content-3 .inner .btn-link{width:245px;height:275px;top:2845px;}
+.sub-wrap.sub2-1 .sub-content-3 .inner .btn-link.link1{left:13px;}
+.sub-wrap.sub2-1 .sub-content-3 .inner .btn-link.link2{left:273px;}
+.sub-wrap.sub2-1 .sub-content-3 .inner .btn-link.link3{left:533px;}
+.sub-wrap.sub2-1 .sub-content-3 .inner .btn-link.link4{left:790px;}
+.sub-wrap.sub2-1 .sub-content-3 .inner .btn-link.link5{left:1050px;}
 
 .sub-wrap.sub2-2 .sub-top-wrap{background:url(../img/sub2/sub2_top_bg2.jpg) 50% 0 no-repeat;}
 .sub-wrap.sub2-2 .sub-content-1{height:648px;background:url(../img/sub2/sub2_bg2_1.jpg) 50% 0 no-repeat;}
