@@ -35,7 +35,7 @@ var GUI = window.GUI || (function(){
       var csPopupUI = _.find('.cs-popup-wrap');
 
       var hospitalSwiper = new Swiper('.hospital-swiper', {
-        effect: "fade",
+        // effect: "fade",
         autoplay: {
           delay: 3000,
         },

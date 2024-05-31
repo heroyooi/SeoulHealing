@@ -13,13 +13,13 @@ body{width:100%;background: #000;}
 #header .inner{width:1600px;height:100px;margin:0 auto;position: relative;}
 #header h1{padding-top:38px;}
 #header h1 a{display:inline-block;width:242px;height:26px;background:url(../img/common/h1_logo.png) 0 0 no-repeat;font-size:0;vertical-align:top;}
-#header .hospital-swiper{position: absolute;left:334px;top:26px;width:150px;}
+#header .hospital-swiper{position: absolute;left:334px;top:26px;width:190px;padding:0 20px;overflow:hidden;}
 #header .hospital-swiper .swiper-slide{opacity:0 !important;}
 #header .hospital-swiper .swiper-slide-active{opacity:1 !important;}
 #header .hospital-swiper .swiper-button-next,
 #header .hospital-swiper .swiper-button-prev{width:7px;height:13px;z-index:1;top:40px;}
-#header .hospital-swiper .swiper-button-prev{background:url(../img/common/ico_arrow_l.png) 0 0 no-repeat;left:-20px;}
-#header .hospital-swiper .swiper-button-next{background:url(../img/common/ico_arrow_r.png) 0 0 no-repeat;right:-20px;}
+#header .hospital-swiper .swiper-button-prev{background:url(../img/common/ico_arrow_l.png) 0 0 no-repeat;left:0;}
+#header .hospital-swiper .swiper-button-next{background:url(../img/common/ico_arrow_r.png) 0 0 no-repeat;right:0;}
 #header .hospital-swiper .swiper-button-next:after,
 #header .hospital-swiper .swiper-button-prev:after{display:none;}
 
