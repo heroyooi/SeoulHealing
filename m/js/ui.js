@@ -181,7 +181,7 @@ var GUI = window.GUI || (function(){
       var $areaMenu = $('.menu-wrap');
 
       $('#gnb > li > a').on('click', function(e){
-        e.preventDefault();
+        //e.preventDefault();
         if (!$(this).closest('li').hasClass('on')) {
           $(this).closest('li').addClass('on');
           $(this).closest('li').siblings().removeClass('on');
@@ -254,4 +254,19 @@ var closeGNB = function(){
   $('html').css('overflow', '');
   $('body').css({'position': '', 'top': ''});
   window.scrollTo(0, rememberY);
+}
+
+var query = $.urlParam('popup');
+var query2 = $.urlParam('popup2');
+var query3 = $.urlParam('sample');
+if (query || query2 || query3) {
+  setTimeout(() => {
+    $(`[href*="#popup-${query}"]`).click();
+    if (query2) {
+      openCSPopup('popup-privacy');
+    }
+    if (query3 == 'menu') {
+      openGNB();
+    }
+  }, 250);
 }

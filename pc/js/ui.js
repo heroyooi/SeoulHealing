@@ -261,3 +261,14 @@ var closeCSPopup = function(id) {
     $('.cs-popup-dimm, .cs-popup-wrap').fadeOut(200);
   }  
 }
+
+var query = $.urlParam('popup');
+var query2 = $.urlParam('popup2');
+if (query) {
+  setTimeout(() => {
+    $(`[href*="#popup-${query}"]`).click();
+    if (query2) {
+      openCSPopup('popup-privacy');
+    }
+  }, 250);
+}

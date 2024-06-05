@@ -24,13 +24,11 @@
 [class*=popup-wrap] .con-wrap{padding:80px 35px;}
 [class*=popup-wrap] .s-logo{text-align:center;width:149px;margin:0 auto;}
 [class*=popup-wrap] .tit{font-size:30px;color:#3a3a3a;font-weight:bold;text-align:center;margin-top:45px;}
-[class*=popup-wrap]#popup-fee .con-wrap{padding:45px 12.5px 55px;height:100vh;overflow-y:auto;}
-[class*=popup-wrap]#popup-fee button.mfp-close{position: fixed;background:url(../img/common/btn_close.png) 50% 50% no-repeat;background-size:auto 21px;}
+[class*=popup-wrap]#popup-fee .con-wrap{padding:45px 12.5px 55px;}
 [class*=popup-wrap].popup-food{min-height:initial;width:94%;}
 [class*=popup-wrap].popup-food .con-wrap{padding:0;}
 [class*=popup-wrap].popup-food button.mfp-close,
 .popup-wrap.popup-food button.mfp-arrow{width:15px;height:15px;background:url(../img/common/btn_close.png) 50% 50% no-repeat;background-size:auto 15px;}
-[class*=popup-wrap]#popup-location .con-wrap{padding:0;}
 
 .cs-popup-dimm{position:fixed;left:0;top:0;width:100%;height:100%;background:#0b0b0b;opacity:0.8;z-index:1045;display:none;}
 .cs-popup-wrap{position:fixed;z-index:1045;left:0;top:50%;transform:translateY(-50%);width:100%;height:100%;display:none;}
