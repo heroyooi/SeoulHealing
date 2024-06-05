@@ -369,17 +369,22 @@
       }
     });
     var query = $.urlParam('tab');
-	  if (query === '1') {
-      $('html, body').animate({ scrollTop: $('.sub-program-02').offset().top - 38 }, 250);
-    } else if (query === '2') {
-      $('html, body').animate({ scrollTop: $('.sub-program-03').offset().top - 38 }, 250);
-    } else if (query === '3') {
-      $('html, body').animate({ scrollTop: $('.sub-program-04').offset().top - 38 }, 250);
-    } else if (query === '4') {
-      $('html, body').animate({ scrollTop: $('.sub-program-05').offset().top - 38 }, 250);
-    } else if (query === '5') {
-      $('html, body').animate({ scrollTop: $('.sub-program-06').offset().top - 38 }, 250);
+    if (query) {
+      setTimeout(() => {
+        if (query === '1') {
+          $('html, body').animate({ scrollTop: $('.sub-program-02').offset().top - 38 }, 250);
+        } else if (query === '2') {
+          $('html, body').animate({ scrollTop: $('.sub-program-03').offset().top - 38 }, 250);
+        } else if (query === '3') {
+          $('html, body').animate({ scrollTop: $('.sub-program-04').offset().top - 38 }, 250);
+        } else if (query === '4') {
+          $('html, body').animate({ scrollTop: $('.sub-program-05').offset().top - 38 }, 250);
+        } else if (query === '5') {
+          $('html, body').animate({ scrollTop: $('.sub-program-06').offset().top - 38 }, 250);
+        }
+      }, 250);
     }
+	  
 
   </script>
 </body>
